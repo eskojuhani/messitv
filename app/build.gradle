@@ -1,0 +1,41 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 29
+    defaultConfig {
+        applicationId "fi.ese.tv"
+        minSdkVersion 24
+        targetSdkVersion 29
+        versionCode 2
+        versionName "1.0"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'androidx.recyclerview:recyclerview:1.1.0'
+    implementation 'androidx.leanback:leanback:1.0.0'
+    implementation 'androidx.leanback:leanback-preference:1.0.0'
+    implementation 'androidx.annotation:annotation:1.1.0'
+    implementation "androidx.preference:preference:1.1.1"
+    implementation 'androidx.recommendation:recommendation:1.0.0'
+    implementation 'android.arch.lifecycle:extensions:1.1.1'
+    implementation 'com.google.android.material:material:1.1.0'
+
+    implementation 'com.github.bumptech.glide:glide:4.10.0'
+
+    implementation 'com.google.android.exoplayer:exoplayer:2.11.0'
+    implementation 'com.google.android.exoplayer:extension-leanback:2.11.3'
+    implementation 'androidx.appcompat:appcompat:1.1.0'
+    implementation 'androidx.constraintlayout:constraintlayout:1.1.3'
+}

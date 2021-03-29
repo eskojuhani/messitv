@@ -1,0 +1,13 @@
+{
+ "profiles": [
+  {
+   "name": "myduo",
+   "username": "",
+   "password": "",
+   "auth": "Basic cm9abcdefghijMQ==",
+   "web_address": "http://",
+   "web_port": 8080,
+   "stream_port": 8001
+  }
+  ]
+ }
